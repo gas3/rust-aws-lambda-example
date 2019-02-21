@@ -7,3 +7,5 @@ authors = ["gas3 <m.grandi89@gmail.com>"]
 serde = "1.0.80"
 serde_derive = "1.0.80"
 lambda_runtime = "0.2.0"
+rusoto_core = "0.36"
+rusoto_s3 = "0.36"
