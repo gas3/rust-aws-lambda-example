@@ -1,0 +1,9 @@
+[package]
+name = "rust-aws-lambda-user-exists"
+version = "0.1.0"
+authors = ["gas3 <m.grandi89@gmail.com>"]
+
+[dependencies]
+serde = "1.0.80"
+serde_derive = "1.0.80"
+lambda_runtime = "0.2.0"
