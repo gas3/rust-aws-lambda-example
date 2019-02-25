@@ -1,12 +1,16 @@
-extern crate lambda_runtime as lambda;
+extern crate lambda_runtime;
 extern crate serde_derive;
 
 use std::error::Error;
 use serde_derive::{Serialize, Deserialize};
-use lambda::{lambda, Context, error::HandlerError};
+use lambda_runtime::{lambda, Context, error::HandlerError};
+
+mod users;
 
 fn main() -> Result<(), Box<dyn Error>> {
     lambda!(user_exists_handler);
+    let s3_client = users::init();
+    users::list_bucket_sync(&s3Client);
     Ok(())
 }
 

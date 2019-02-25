@@ -6,6 +6,9 @@ authors = ["gas3 <m.grandi89@gmail.com>"]
 [dependencies]
 serde = "1.0.80"
 serde_derive = "1.0.80"
+serde_json = "1.0.38"
 lambda_runtime = "0.2.0"
 rusoto_core = "0.36"
 rusoto_s3 = "0.36"
+rusoto_sts = "0.36"
+config = "0.9"
