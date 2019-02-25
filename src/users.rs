@@ -3,11 +3,11 @@ extern crate rusoto_core;
 extern crate rusoto_sts;
 extern crate rusoto_s3;
 
-use std::collections::HashMap;
+// use std::collections::HashMap;
 
 use self::rusoto_core::{Region, HttpClient};
 use self::rusoto_sts::{StsClient, StsAssumeRoleSessionCredentialsProvider};
-use self::rusoto_s3::{ListBucketsOutput, ListObjectsV2Request, ListObjectsV2Output, S3, S3Client};
+use self::rusoto_s3::{ListBucketsOutput, S3, S3Client};
 
 pub fn init() -> S3Client {
     let mut conf = config::Config::default();

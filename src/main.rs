@@ -10,7 +10,7 @@ mod users;
 fn main() -> Result<(), Box<dyn Error>> {
     lambda!(user_exists_handler);
     let s3_client = users::init();
-    users::list_bucket_sync(&s3Client);
+    users::list_bucket_sync(&s3_client);
     Ok(())
 }
 
