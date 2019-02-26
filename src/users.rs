@@ -22,7 +22,7 @@ pub fn init() -> S3Client {
     let provider = StsAssumeRoleSessionCredentialsProvider::new(
         sts,
         conf.get_str("role-arn").unwrap().clone(),
-        conf.get_str("session-name").unwrap().clone(),
+        "test-session".to_owned(),
         None, None, None, None
     );
 
