@@ -17,8 +17,8 @@ docker run --env-file credentials --rm -v "$PWD":/var/task lambci/lambda:provide
 
 Config file:
 ```toml
-s3-bucket = "cuebiq-sand"
-s3-key = "tmp/mgrandi/users.json"
+s3-bucket = "your_bucket"
+s3-key = "your_json_path"
 ```
 
 Users file:
