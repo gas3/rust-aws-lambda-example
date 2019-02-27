@@ -1,7 +1,7 @@
 # rust-aws-lambda-example
 This is an example of an AWS Lambda function written in Rust. The function checks the existence of an user, retrieving the list of users from AWS S3 using Rusoto.
 
-This repository is based on #[rust-aws-lambda](https://github.com/kkostov/rust-aws-lambda).
+This repository is based on [rust-aws-lambda](https://github.com/kkostov/rust-aws-lambda).
 
 Build:
 ```bash
